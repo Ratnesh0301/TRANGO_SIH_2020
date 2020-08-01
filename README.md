@@ -1,5 +1,5 @@
-# TRANGO_SIH_2020
-Trango is a solution in the form of an app for reducing commuting time in urban cities where people have to spent more time to travel than expected. It is because of the
+# BC71_TRANGO
+Trango is a solution for reducing commuting time in urban cities where people have to spent more time to travel than expected. It is because of the
 various factors like Congestion on roads,No traffic management,Complex traffic patterns,Increase in use of  private vehicles for the daily commute ,The exponential increase 
 in the population,No real-time information for public transportation,Accidents on roads.
 

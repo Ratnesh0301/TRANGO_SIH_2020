@@ -3,6 +3,22 @@ Trango is a solution in the form of an app for reducing commuting time in urban 
 various factors like Congestion on roads,No traffic management,Complex traffic patterns,Increase in use of  private vehicles for the daily commute ,The exponential increase 
 in the population,No real-time information for public transportation,Accidents on roads.
 
+## **Problem** ##
+The portion of public transport is diminishing in India. The government has published the results of the mode of the transport people take to commute to work for the most recent Census 2011 information in March 2016. As per the overview over half of the workforce (excluding agriculture and domestic) keep on working at home or travel to their working environment by foot without satisfactory vehicle facilities. Residents are generally reliant on private vehicle. The portion of public transport is only 18.1% of work trips. 
+
+The information shows that there is absence of public transportation and residents are generally reliant on private methods of transport, for example, bicycles (26.3 million) and bikes (25.4 million) in rural and urban India. A bigger number of individuals use bikes than movement by transport (22.9 million). In 2015 the quantity of day by day trips utilizing a bike for driving was 35 million (excluding individual outings); this is based on the vehicle registration.
+
+## **Our Solution** ##
+
+### **For Them Who Use Public Transport** ###
+
+Firstly, commuter choose the type of public transport whether it is taxi or bus and then book a seat for him and paying cashlessly and after check-in he can earn the reward points.
+
+### **For Them Who Use Their Own vehicle** ###
+
+Firstly, commuter will give the source and destination and then the app will devide that trip into multi-segment trips without knowing to the commuter and suggest best suited route to the commuter 
+in real time and alert him about the delay he can face if their is a traffic jam after some distance ahead or something like that which stop the flow of vehicles on the road and suggest him another route immediately. 
+
 ## **FLOW_OF_TRANGO_APP_PAGES** ##
 
 ## **Splash Screen** ##

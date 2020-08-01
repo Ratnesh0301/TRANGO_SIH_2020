@@ -27,11 +27,24 @@ Here the user can securely create a new account in order to take benefits of the
 
 Here the user can get different routes by giving source and destination. Below this,the user can check availability of different type of transits like Bus, Taxi, Metro, and Auto-Rickshaw by clicking on the respective icon.Below this there are **Smart Transit Features** which can user see by sliding the screen right to left or left to right. The features are Following
 1) Find Your Stop-It gives all the available public transport routes available for your destination on a single tap.
+
+![FindYourStop](https://user-images.githubusercontent.com/53862744/89098920-3fe52f00-d409-11ea-8c01-2a4b9152d5a1.jpg)
+
 2) Locate on Map-Provides the user with the location of the public transport stop.
+
+![LocateOnMaps](https://user-images.githubusercontent.com/53862744/89098922-42e01f80-d409-11ea-96f2-838b3187c06e.jpg)
+
 3) Navigate-Maps a route from your current location to the stop.
+
+![Navigate](https://user-images.githubusercontent.com/53862744/89098926-45db1000-d409-11ea-94d5-9c219d9faee7.jpg)
+
 4) Advance Book-Book your seat or ticket before you go on the app.
+
+![AdvanceBook](https://user-images.githubusercontent.com/53862744/89098930-4a072d80-d409-11ea-90f7-7e7e6d63d944.jpg)
+
 5) Move-Information on transit services available near the stop.
 
+![Move](https://user-images.githubusercontent.com/53862744/89098934-4ffd0e80-d409-11ea-8668-5915659e5a00.jpg)
 
 ![PROFILE](https://user-images.githubusercontent.com/53862744/89097776-951c4300-d3ff-11ea-9a64-65c05e4d8898.jpg)
 

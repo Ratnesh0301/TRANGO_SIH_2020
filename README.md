@@ -12,12 +12,11 @@ The information shows that there is absence of public transportation and residen
 
 ### **For Them Who Use Public Transport** ###
 
-Firstly, commuter choose the type of public transport whether it is taxi or bus and then book a seat for him and paying cashlessly and after check-in he can earn the reward points.
+Firstly, commuter choose the type of public transport whether it is taxi,bus  or any other public transport and then book a seat for him and paying cashlessly and after check-in he can earn the reward points for his trip.
 
 ### **For Them Who Use Their Own vehicle** ###
 
-Firstly, commuter will give the source and destination and then the app will devide that trip into multi-segment trips without knowing to the commuter and suggest best suited route to the commuter 
-in real time and alert him about the delay he can face if their is a traffic jam after some distance ahead or something like that which stop the flow of vehicles on the road and suggest him another route immediately. 
+Firstly, commuter will give the source and destination and then the app will devide that trip into multi-segment trips without knowing to the commuter and suggest best suited route to the commuter in real time and alert him about the delay he can face if their is a traffic jam after some distance ahead or something like that which stop the flow of vehicles on the road and suggest him another route immediately. 
 
 ## **FLOW_OF_TRANGO_APP_PAGES** ##
 

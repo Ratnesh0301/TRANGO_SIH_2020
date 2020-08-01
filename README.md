@@ -3,9 +3,9 @@ Trango is a solution in the form of an app for reducing commuting time in urban 
 various factors like Congestion on roads,No traffic management,Complex traffic patterns,Increase in use of  private vehicles for the daily commute ,The exponential increase 
 in the population,No real-time information for public transportation,Accidents on roads.
 
-
-
 **##FLOW_OF_TRANGO_APP_PAGES**
+
+
 ![Splash Screen](https://user-images.githubusercontent.com/53862744/89097774-92b9e900-d3ff-11ea-915d-a6ce1a587385.jpg)
 
 It is the screen showing the name and logo of the App. It is the first page a user will see when he opens the app.

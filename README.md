@@ -3,16 +3,16 @@ Trango is a solution in the form of an app for reducing commuting time in urban 
 various factors like Congestion on roads,No traffic management,Complex traffic patterns,Increase in use of  private vehicles for the daily commute ,The exponential increase 
 in the population,No real-time information for public transportation,Accidents on roads.
 
-**##FLOW_OF_TRANGO_APP_PAGES##**
+## **FLOW_OF_TRANGO_APP_PAGES** ##
 
-**##Splash Screen**
+## **Splash Screen** ##
 
 ![Splash Screen](https://user-images.githubusercontent.com/53862744/89097774-92b9e900-d3ff-11ea-915d-a6ce1a587385.jpg)
 
 It is the screen showing the name and logo of the App. It is the first page a user will see when he opens the app.
 
 
-**##Login Page##**
+## **Login Page** ##
 
 ![LOGIN](https://user-images.githubusercontent.com/53862744/89097772-8d5c9e80-d3ff-11ea-8a92-747df0ad425b.jpg)
 
@@ -20,7 +20,7 @@ Here the user can securely Login into there account if they already signed up be
 If the user forget his/her password then also there is an option of **Forgot Password** through which the user can create a new password. And also there is an option for **Sign Up** at the bottom of the page for new users.
 
 
-**##Sign Up Page##**
+## **Sign Up Page** ##
 
 ![SIGN UP](https://user-images.githubusercontent.com/53862744/89097773-9188bc00-d3ff-11ea-81b4-26368c2fa17d.jpg)
 
@@ -28,7 +28,7 @@ Here the user can securely create a new account in order to take benefits of the
 **I agree on**. The user can sign up by clicking on the **SIGN UP** button. And also there is an option for **Log in** at the bottom of the page for old users.
 
 
-**##Homepage##**
+## **Homepage** ##
 
 ![HOMEPAGE](https://user-images.githubusercontent.com/53862744/89097769-8a61ae00-d3ff-11ea-9840-a4638e39c857.jpg)
 
@@ -53,7 +53,7 @@ Here the user can get different routes by giving source and destination. Below t
 
 ![Move](https://user-images.githubusercontent.com/53862744/89098934-4ffd0e80-d409-11ea-8668-5915659e5a00.jpg)
 
-**##Profile Page##**
+## **Profile Page** ##
 
 ![PROFILE](https://user-images.githubusercontent.com/53862744/89097776-951c4300-d3ff-11ea-9a64-65c05e4d8898.jpg)
 

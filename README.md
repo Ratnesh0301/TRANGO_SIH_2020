@@ -18,7 +18,7 @@ Firstly, commuter choose the type of public transport whether it is taxi,bus  or
 
 Firstly, commuter will give the source and destination and then the app will devide that trip into multi-segment trips without knowing to the commuter and suggest best suited route to the commuter in real time and alert him about the delay he can face if their is a traffic jam after some distance ahead or something like that which stop the flow of vehicles on the road and suggest him another route immediately. 
 
-## **FLOW_OF_TRANGO_APP_PAGES** ##
+## **FLOW OF TRANGO APP PAGES** ##
 
 ## **Splash Screen** ##
 

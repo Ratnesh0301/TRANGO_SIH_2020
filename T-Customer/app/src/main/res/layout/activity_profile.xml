@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    tools:context=".Profile"
+    android:background="@color/white">
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,7 +50,6 @@
 
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardView6"
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         app:cardCornerRadius="80dp"
@@ -67,13 +68,12 @@
 
 
                 <Button
-                    android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="0dp"
                     android:layout_marginEnd="28dp"
                     android:background="@drawable/button_background"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#F4F3F3"
                     android:fontFamily="@font/montserrat"
                     android:paddingLeft="30dp"
                     android:paddingRight="30dp"
@@ -84,7 +84,8 @@
                     android:textSize="10dp"
                     android:textStyle=""
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
 
                 <EditText
                     android:id="@+id/name"
@@ -92,7 +93,7 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
-
+                    android:elevation="2dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/textfield"
                     android:fontFamily="@font/montserrat"
@@ -111,7 +112,7 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
-
+                    android:elevation="2dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/textfield"
                     android:fontFamily="@font/montserrat"
@@ -132,6 +133,7 @@
                     android:background="@drawable/textfield"
                     android:fontFamily="@font/montserrat"
                     android:inputType="phone"
+                    android:elevation="2dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.492"
@@ -145,14 +147,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="28dp"
                     android:layout_marginBottom="12dp"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/montserrat"
                     android:text="Name"
                     android:textColor="@color/colorPrimaryDark"
                     app:layout_constraintBottom_toTopOf="@+id/name"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
                 <TextView
-                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="28dp"
@@ -190,7 +193,7 @@
                     android:layout_marginEnd="30dp"
                     android:fontFamily="@font/montserrat"
                     android:switchMinWidth="55dp"
-                    android:text="Allow Notifications"
+                    android:text="Allow Pooling Requests"
                     android:textColor="@color/colorPrimaryDark"
                     android:textCursorDrawable="@color/colorPrimary"
                     android:track="@drawable/track"
@@ -212,6 +215,7 @@
                     android:fontFamily="@font/montserrat"
                     android:stateListAnimator="@null"
                     android:text="CHANGE PASSWORD"
+                    android:onClick="dialoguePopup"
                     android:textColor="@color/white"
                     app:layout_constraintBottom_toTopOf="@+id/button3"
                     app:layout_constraintEnd_toEndOf="parent"

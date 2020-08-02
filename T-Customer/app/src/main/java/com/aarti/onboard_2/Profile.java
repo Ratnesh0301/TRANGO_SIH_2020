@@ -1,6 +1,7 @@
 package com.aarti.onboard_2;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -23,6 +25,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Profile extends AppCompatActivity {
     Button changePassword;
+    Dialog epicDialogue;
     private int CAMERA_PERMISSION_CODE=1;
     ImageView scanner;
     @Override
@@ -37,14 +40,8 @@ public class Profile extends AppCompatActivity {
                 .into(bg);
 
 
+        epicDialogue=new Dialog(this);
         changePassword=findViewById(R.id.changePass);
-        changePassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i= new Intent(Profile.this,ChangePassword.class);
-                startActivity(i);
-            }
-        });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setSelectedItemId(R.id.home);
@@ -98,6 +95,29 @@ public class Profile extends AppCompatActivity {
             }
         });
     }
+
+
+    public void dialoguePopup(View view) {
+        final android.app.AlertDialog.Builder alert = new android.app.AlertDialog.Builder(Profile.this);
+        View mView = getLayoutInflater().inflate(R.layout.chage_password,null);
+        final CardView crd=(CardView)mView.findViewById(R.id.alertCard);
+        Button savePass=(Button)mView.findViewById(R.id.savePassword);
+
+        alert.setView(mView);
+
+        final android.app.AlertDialog alertDialog=alert.create();
+        alertDialog.setCanceledOnTouchOutside(false);
+
+        savePass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertDialog.dismiss();
+            }
+        });
+
+        alertDialog.show();
+    }
+
 
     private void Request()
     {

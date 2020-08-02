@@ -86,7 +86,7 @@ Here the user can get different routes by giving source and destination. Below t
 
 ![Move](https://user-images.githubusercontent.com/53862744/89099791-69a15480-d40f-11ea-9c65-6aabbb15a6b4.jpg)
 
-## **Trango Wallet Page**##
+## **Trango Wallet Page** ##
 
 ![Wallet Screen copy](https://user-images.githubusercontent.com/53862744/89128867-3990a900-d516-11ea-923d-dc3152186b08.jpg)
 

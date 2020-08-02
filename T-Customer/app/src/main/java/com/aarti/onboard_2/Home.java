@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
@@ -36,6 +37,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
     private ViewPager mSlideViewPager;
 
+    CardView train,bus,metro,taxi;
     private LinearLayout mDotLayout;
 
     private TextView[] mDots;
@@ -62,6 +64,42 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         drawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        train=findViewById(R.id.train);
+        bus=findViewById(R.id.bus);
+        metro=findViewById(R.id.metro);
+        taxi=findViewById(R.id.taxi);
+
+
+        train.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Home.this,Trains.class);
+                startActivity(i);
+            }
+        });
+        bus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Home.this,Bus.class);
+                startActivity(i);
+            }
+        });
+        metro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Home.this,Metro.class);
+                startActivity(i);
+            }
+        });
+        taxi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Home.this,Cabs.class);
+                startActivity(i);
+            }
+        });
+
 
         navigation=findViewById(R.id.navigation);
 

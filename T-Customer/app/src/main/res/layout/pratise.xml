@@ -24,8 +24,10 @@
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
             <androidx.cardview.widget.CardView
+                android:id="@+id/bus"
                 android:layout_width="130dp"
                 android:layout_height="170dp"
+                android:clickable="true"
                 android:background="@drawable/white"
                 android:layout_marginLeft="0dp">
 
@@ -58,9 +60,11 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/taxi"
                 android:layout_width="130dp"
                 android:layout_height="170dp"
                 android:background="@drawable/white"
+                android:clickable="true"
                 android:layout_marginLeft="40dp">
 
 
@@ -99,8 +103,10 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="130dp"
+                android:id="@+id/metro"
                 android:layout_height="170dp"
                 android:layout_marginLeft="0dp"
+                android:clickable="true"
                 android:background="@drawable/white">
 
 
@@ -134,6 +140,8 @@
                 android:layout_width="130dp"
                 android:layout_height="170dp"
                 android:layout_marginLeft="40dp"
+                android:id="@+id/train"
+                android:clickable="true"
                 android:background="@drawable/white">
 
 
@@ -143,8 +151,8 @@
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="25dp"
                     android:background="@drawable/rickshawbackground"
-                    android:padding="5dp"
-                    android:src="@drawable/ricksh"
+                    android:padding="22dp"
+                    android:src="@drawable/ic_train"
                     android:tint="#068995">
 
                 </ImageView>
@@ -155,7 +163,7 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="120dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Rick"
+                    android:text="Train"
                     android:textAllCaps="false"
                     android:textColor="#0D1947"
                     android:textSize="20dp">

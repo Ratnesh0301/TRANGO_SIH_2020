@@ -71,15 +71,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
             <androidx.cardview.widget.CardView
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="300dp"
                 android:layout_marginTop="15dp"
+                app:cardCornerRadius="14dp"
                 android:background="@drawable/ic_low_card_bg"
                 android:gravity="center_horizontal"
-                android:layout_marginLeft="50dp"
                 android:layout_height="150dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -169,6 +170,8 @@
 
 
 
+
+
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="50dp"
@@ -188,9 +191,9 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="300dp"
                 android:layout_marginTop="15dp"
+                app:cardCornerRadius="14dp"
                 android:background="@drawable/ic_low_card_bg"
                 android:gravity="center_horizontal"
-                android:layout_marginLeft="50dp"
                 android:layout_height="150dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -279,6 +282,7 @@
 
 
 
+
                 <Button
                     android:layout_width="130dp"
                     android:layout_height="50dp"
@@ -299,9 +303,9 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="300dp"
                 android:layout_marginTop="15dp"
+                app:cardCornerRadius="14dp"
                 android:background="@drawable/ic_low_card_bg"
                 android:gravity="center_horizontal"
-                android:layout_marginLeft="50dp"
                 android:layout_height="150dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -391,6 +395,7 @@
 
 
 
+
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="50dp"
@@ -410,11 +415,10 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="300dp"
                 android:layout_marginBottom="110dp"
+                app:cardCornerRadius="14dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/ic_low_card_bg"
-                android:gravity="center_horizontal"
-                android:layout_marginLeft="50dp"
-                android:layout_height="150dp">
+                android:gravity="center_horizontal" android:layout_height="150dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"

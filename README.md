@@ -88,9 +88,13 @@ Here the user can get different routes by giving source and destination. Below t
 
 ## **Trango Wallet Page**##
 
-![Wallet Screen](https://user-images.githubusercontent.com/53862744/89127091-94bb9f00-d508-11ea-994b-638140c6ae3d.jpg)
+![Wallet Screen copy](https://user-images.githubusercontent.com/53862744/89128867-3990a900-d516-11ea-923d-dc3152186b08.jpg)
 
-This page shows the **Available Coins** earned by the user by using public transport and by car pooling on the top of the page. Then there is **Promo Code** section where one can apply promo code and after clicking the **REDEEM CODE** user can take benefits like cashback or extra coins . Then we can **ADD MONEY** in the wallet to pay for online seat booking.Then user can see his history of adding money into the wallet by clickng on the **Statement** button and then he will see this page
+![ws3 - Copy](https://user-images.githubusercontent.com/53862744/89129055-bf612400-d517-11ea-810f-9479dbeb98c6.jpg)
+
+![ws4 - Copy](https://user-images.githubusercontent.com/53862744/89129060-c38d4180-d517-11ea-80d6-f129ed270cfc.jpg)
+
+This page shows the **Available Coins** earned by the user by using public transport and by car pooling on the top of the page.Then there is **Promo Code** section where one can apply promo code and after clicking the **REDEEM CODE** user can take benefits like cashback or extra coins . Then we can **ADD MONEY** in the wallet to pay for online seat booking.Then user can see his history of adding money into the wallet by clickng on the **Statement** button and then he will see this page
 
 [Image]
 
@@ -100,4 +104,4 @@ There is a conversion showing of the trango wallet coins to the real money on th
 
 ![Profile Page](https://user-images.githubusercontent.com/53862744/89124288-68e1ee80-d4f3-11ea-8985-1929e833b0a9.jpg)
 
-This is the Profile page of the app where user can make his/her profile by giving his Image, Name, Email, Phone Number. On this page he/she can able and disable the notifications and change his password whenever he/she wants to.
+This is the Profile page of the app where user can make his/her profile by giving his Image, Name, Email, Phone Number. On this page he/she can able and disable the the **Pooling Requests** and change his password whenever he/she wants to.

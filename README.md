@@ -96,7 +96,9 @@ Here the user can get different routes by giving source and destination. Below t
 
 This page shows the **Available Coins** earned by the user by using public transport and by car pooling on the top of the page.Then there is **Promo Code** section where one can apply promo code and after clicking the **REDEEM CODE** user can take benefits like cashback or extra coins . Then we can **ADD MONEY** in the wallet to pay for online seat booking.Then user can see his history of adding money into the wallet by clickng on the **Statement** button and then he will see this page
 
-[Image]
+![ws5 - Copy](https://user-images.githubusercontent.com/53862744/89128878-44e3d480-d516-11ea-998e-8792d3cb6344.jpg)
+
+![ws6](https://user-images.githubusercontent.com/53862744/89128879-47462e80-d516-11ea-9fe3-65a0c9651f23.jpg)
 
 There is a conversion showing of the trango wallet coins to the real money on the top of the page. Then multiple **Date** buttons available which on clicking shows the time of that day and how much money added or spent from the wallet  
 

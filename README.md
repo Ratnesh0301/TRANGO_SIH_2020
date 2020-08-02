@@ -37,13 +37,20 @@ This feature can help us to find the no of violation of social distaning in real
 
 It is the screen showing the name and logo of the App. It is the first page a user will see when he opens the app.
 
+## **Onboarding Screens** ##
+![Onboarding screen 1](https://user-images.githubusercontent.com/53862744/89127097-9f763400-d508-11ea-81b8-e10c1eea54b5.jpg)
+![onboarding 2](https://user-images.githubusercontent.com/53862744/89127092-96856280-d508-11ea-8565-a536fffdaa21.jpg)
+![onboarding 3](https://user-images.githubusercontent.com/53862744/89127095-984f2600-d508-11ea-9984-a5dc9ca84ff3.jpg)
+
+These screens are giving a glimpse of the features of the app.Their is a **SKIP** button in the bottom of the screens for those users who wants to enter direct into the App.
+On 1 and 2 screen from the left their is **NEXT** button to enter into the next onboarding screen. On the 3rd screen from the left their is **GET STARTED** button to enter into the app.
 
 ## **Login Page** ##
 
 ![LOGIN](https://user-images.githubusercontent.com/53862744/89124287-654e6780-d4f3-11ea-90e5-37cdaac42cc1.jpg)
 
 Here the user can securely Login into there account if they already signed up before.The user have to provide the 10 digit phone number and password assigned by him/her earlier.
-If the user forget his/her password then also there is an option of **Forgot Password** through which the user can create a new password. And also there is an option for **Sign Up** at the bottom of the page for new users.
+If the user forget his/her password then also there is an option of **Forgot Password** through which the user can create a new password. And also there is an option for **Sign up now** at the bottom of the page for new users.
 
 
 ## **Sign Up Page** ##
@@ -78,6 +85,16 @@ Here the user can get different routes by giving source and destination. Below t
 5) Move-Information on transit services available near the stop.
 
 ![Move](https://user-images.githubusercontent.com/53862744/89099791-69a15480-d40f-11ea-9c65-6aabbb15a6b4.jpg)
+
+## **Trango Wallet Page**##
+
+![Wallet Screen](https://user-images.githubusercontent.com/53862744/89127091-94bb9f00-d508-11ea-994b-638140c6ae3d.jpg)
+
+This page shows the **Available Coins** earned by the user by using public transport and by car pooling on the top of the page. Then there is **Promo Code** section where one can apply promo code and after clicking the **REDEEM CODE** user can take benefits like cashback or extra coins . Then we can **ADD MONEY** in the wallet to pay for online seat booking.Then user can see his history of adding money into the wallet by clickng on the **Statement** button and then he will see this page
+
+[Image]
+
+There is a conversion showing of the trango wallet coins to the real money on the top of the page. Then multiple **Date** buttons available which on clicking shows the time of that day and how much money added or spent from the wallet  
 
 ## **Profile Page** ##
 

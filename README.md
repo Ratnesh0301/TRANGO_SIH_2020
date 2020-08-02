@@ -18,18 +18,29 @@ Firstly, commuter choose the type of public transport whether it is taxi,bus  or
 
 Firstly, commuter will give the source and destination and then the app will devide that trip into multi-segment trips without knowing to the commuter and suggest best suited route to the commuter in real time and alert him about the delay he can face if their is a traffic jam after some distance ahead or something like that which stop the flow of vehicles on the road and suggest him another route immediately. 
 
+## **Some Unique Features Of Trango** ##
+
+### **Congestion Detection** ###
+
+The app can tell the user about the congestion in the bus using its congestion api. The cameras in the bus will streaming the video at a predefined url and and then by applying machine learning on it the api can count the no of persons available in the bus.
+
+### **Social Distancing Detection** ###
+
+This feature can help us to find the no of violation of social distaning in real time. The cameras in the bus will streaming the video at a predefined url and and then by applying machine learning on it the api can detect the social distancing violations.
+
+
 ## **FLOW OF TRANGO APP PAGES** ##
 
 ## **Splash Screen** ##
 
-![Splash](https://user-images.githubusercontent.com/53862744/89099750-23e48c00-d40f-11ea-8956-09e06ec73730.jpg)
+![Splash](https://user-images.githubusercontent.com/53862744/89124292-6e3f3900-d4f3-11ea-86aa-9201a77888c5.jpg)
 
 It is the screen showing the name and logo of the App. It is the first page a user will see when he opens the app.
 
 
 ## **Login Page** ##
 
-![LOGIN](https://user-images.githubusercontent.com/53862744/89099753-27781300-d40f-11ea-95a8-330c0e06b68c.jpg)
+![LOGIN](https://user-images.githubusercontent.com/53862744/89124287-654e6780-d4f3-11ea-90e5-37cdaac42cc1.jpg)
 
 Here the user can securely Login into there account if they already signed up before.The user have to provide the 10 digit phone number and password assigned by him/her earlier.
 If the user forget his/her password then also there is an option of **Forgot Password** through which the user can create a new password. And also there is an option for **Sign Up** at the bottom of the page for new users.
@@ -37,7 +48,7 @@ If the user forget his/her password then also there is an option of **Forgot Pas
 
 ## **Sign Up Page** ##
 
-![SIGN UP](https://user-images.githubusercontent.com/53862744/89099760-3363d500-d40f-11ea-9698-e565390da1dc.jpg)
+![SIGN UP](https://user-images.githubusercontent.com/53862744/89124291-6bdcdf00-d4f3-11ea-94e4-6cf802822865.jpg)
 
 Here the user can securely create a new account in order to take benefits of the app. The user have to provide a 10 digit phone number, an Email ID, his/her Name, Password and Partner type. Then there is an option of **I have a referral code** to apply the referral code. Then the user can read **Terms And Conditions** if they want to by clicking on 
 **I agree on**. The user can sign up by clicking on the **SIGN UP** button. And also there is an option for **Log in** at the bottom of the page for old users.
@@ -70,6 +81,6 @@ Here the user can get different routes by giving source and destination. Below t
 
 ## **Profile Page** ##
 
-![PROFILE - Copy](https://user-images.githubusercontent.com/53862744/89099799-74f48000-d40f-11ea-8e80-8dff0239d71b.jpg)
+![Profile Page](https://user-images.githubusercontent.com/53862744/89124288-68e1ee80-d4f3-11ea-8985-1929e833b0a9.jpg)
 
 This is the Profile page of the app where user can make his/her profile by giving his Image, Name, Email, Phone Number. On this page he/she can able and disable the notifications and change his password whenever he/she wants to.

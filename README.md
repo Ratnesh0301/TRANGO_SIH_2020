@@ -98,7 +98,7 @@ This page shows the **Available Coins** earned by the user by using public trans
 
 ![ws5 - Copy](https://user-images.githubusercontent.com/53862744/89128878-44e3d480-d516-11ea-998e-8792d3cb6344.jpg)
 
-![ws6](https://user-images.githubusercontent.com/53862744/89128879-47462e80-d516-11ea-9fe3-65a0c9651f23.jpg)
+![ws6](https://user-images.githubusercontent.com/53862744/89129190-f552d800-d518-11ea-8632-67795e6c5ed5.jpg)
 
 There is a conversion showing of the trango wallet coins to the real money on the top of the page. Then multiple **Date** buttons available which on clicking shows the time of that day and how much money added or spent from the wallet  
 

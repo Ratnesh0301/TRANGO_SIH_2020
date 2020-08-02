@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Real Time Social Distance Detector</title>
+
+    <style>
+      body {
+        background-image: url({{ url_for('static', filename='3.jpg') }})
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Real Time Social Distance Detector</h1>
+    <img src="{{ url_for('video_feed') }}">
+
+  </body>
+</html>

@@ -18,26 +18,44 @@ Firstly, commuter choose the type of public transport whether it is taxi,bus  or
 
 Firstly, commuter will give the source and destination and then the app will devide that trip into multi-segment trips without knowing to the commuter and suggest best suited route to the commuter in real time and alert him about the delay he can face if their is a traffic jam after some distance ahead or something like that which stop the flow of vehicles on the road and suggest him another route immediately. 
 
+## **Some Unique Features Of Trango** ##
+
+### **Congestion Detection** ###
+
+The app can tell the user about the congestion in the bus using its congestion api. The cameras in the bus will streaming the video at a predefined url and and then by applying machine learning on it the api can count the no of persons available in the bus.
+
+### **Social Distancing Detection** ###
+
+This feature can help us to find the no of violation of social distaning in real time. The cameras in the bus will streaming the video at a predefined url and and then by applying machine learning on it the api can detect the social distancing violations.
+
+
 ## **FLOW OF TRANGO APP PAGES** ##
 
 ## **Splash Screen** ##
 
-![Splash](https://user-images.githubusercontent.com/53862744/89099750-23e48c00-d40f-11ea-8956-09e06ec73730.jpg)
+![Splash](https://user-images.githubusercontent.com/53862744/89124292-6e3f3900-d4f3-11ea-86aa-9201a77888c5.jpg)
 
 It is the screen showing the name and logo of the App. It is the first page a user will see when he opens the app.
 
+## **Onboarding Screens** ##
+![Onboarding screen 1](https://user-images.githubusercontent.com/53862744/89127097-9f763400-d508-11ea-81b8-e10c1eea54b5.jpg)
+![onboarding 2](https://user-images.githubusercontent.com/53862744/89127092-96856280-d508-11ea-8565-a536fffdaa21.jpg)
+![onboarding 3](https://user-images.githubusercontent.com/53862744/89127095-984f2600-d508-11ea-9984-a5dc9ca84ff3.jpg)
+
+These screens are giving a glimpse of the features of the app.Their is a **SKIP** button in the bottom of the screens for those users who wants to enter direct into the App.
+On 1 and 2 screen from the left their is **NEXT** button to enter into the next onboarding screen. On the 3rd screen from the left their is **GET STARTED** button to enter into the app.
 
 ## **Login Page** ##
 
-![LOGIN](https://user-images.githubusercontent.com/53862744/89099753-27781300-d40f-11ea-95a8-330c0e06b68c.jpg)
+![LOGIN](https://user-images.githubusercontent.com/53862744/89124287-654e6780-d4f3-11ea-90e5-37cdaac42cc1.jpg)
 
 Here the user can securely Login into there account if they already signed up before.The user have to provide the 10 digit phone number and password assigned by him/her earlier.
-If the user forget his/her password then also there is an option of **Forgot Password** through which the user can create a new password. And also there is an option for **Sign Up** at the bottom of the page for new users.
+If the user forget his/her password then also there is an option of **Forgot Password** through which the user can create a new password. And also there is an option for **Sign up now** at the bottom of the page for new users.
 
 
 ## **Sign Up Page** ##
 
-![SIGN UP](https://user-images.githubusercontent.com/53862744/89099760-3363d500-d40f-11ea-9698-e565390da1dc.jpg)
+![SIGN UP](https://user-images.githubusercontent.com/53862744/89124291-6bdcdf00-d4f3-11ea-94e4-6cf802822865.jpg)
 
 Here the user can securely create a new account in order to take benefits of the app. The user have to provide a 10 digit phone number, an Email ID, his/her Name, Password and Partner type. Then there is an option of **I have a referral code** to apply the referral code. Then the user can read **Terms And Conditions** if they want to by clicking on 
 **I agree on**. The user can sign up by clicking on the **SIGN UP** button. And also there is an option for **Log in** at the bottom of the page for old users.
@@ -68,8 +86,24 @@ Here the user can get different routes by giving source and destination. Below t
 
 ![Move](https://user-images.githubusercontent.com/53862744/89099791-69a15480-d40f-11ea-9c65-6aabbb15a6b4.jpg)
 
+## **Trango Wallet Page** ##
+
+![Wallet Screen copy](https://user-images.githubusercontent.com/53862744/89128867-3990a900-d516-11ea-923d-dc3152186b08.jpg)
+
+![ws3 - Copy](https://user-images.githubusercontent.com/53862744/89129055-bf612400-d517-11ea-810f-9479dbeb98c6.jpg)
+
+![ws4 - Copy](https://user-images.githubusercontent.com/53862744/89129060-c38d4180-d517-11ea-80d6-f129ed270cfc.jpg)
+
+This page shows the **Available Coins** earned by the user by using public transport and by car pooling on the top of the page.Then there is **Promo Code** section where one can apply promo code and after clicking the **REDEEM CODE** user can take benefits like cashback or extra coins . Then we can **ADD MONEY** in the wallet to pay for online seat booking.Then user can see his history of adding money into the wallet by clickng on the **Statement** button and then he will see this page
+
+![ws5 - Copy](https://user-images.githubusercontent.com/53862744/89128878-44e3d480-d516-11ea-998e-8792d3cb6344.jpg)
+
+![ws6](https://user-images.githubusercontent.com/53862744/89129190-f552d800-d518-11ea-8632-67795e6c5ed5.jpg)
+
+There is a conversion showing of the trango wallet coins to the real money on the top of the page. Then multiple **Date** buttons available which on clicking shows the time of that day and how much money added or spent from the wallet  
+
 ## **Profile Page** ##
 
-![PROFILE - Copy](https://user-images.githubusercontent.com/53862744/89099799-74f48000-d40f-11ea-8e80-8dff0239d71b.jpg)
+![Profile Page](https://user-images.githubusercontent.com/53862744/89124288-68e1ee80-d4f3-11ea-8985-1929e833b0a9.jpg)
 
-This is the Profile page of the app where user can make his/her profile by giving his Image, Name, Email, Phone Number. On this page he/she can able and disable the notifications and change his password whenever he/she wants to.
+This is the Profile page of the app where user can make his/her profile by giving his Image, Name, Email, Phone Number. On this page he/she can able and disable the the **Pooling Requests** and change his password whenever he/she wants to.

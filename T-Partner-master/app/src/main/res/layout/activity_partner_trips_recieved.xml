@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+tools:context="com.aarti.prtnr.partnerTripsRecieved"
+android:id="@+id/transitionContainer">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="70dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FAFAFA">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="31dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_side_bar_lines"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView28"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_solidcircle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:text="4000 KM"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+                app:layout_constraintEnd_toEndOf="@+id/imageView28"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="@+id/imageView28"
+                app:layout_constraintTop_toTopOf="@+id/imageView28"
+                app:layout_constraintVertical_bias="0.434" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/montserrat"
+                android:text="24 Trips"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView28"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="@+id/imageView28"
+                app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:weightSum="3"
+                app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbLeft"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radioleftselector"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Today"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbCenter"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiocenterselector"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Yesterday"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rbRight"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiorightselector"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="July 1"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Trips Recieved"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+            <Button
+                android:id="@+id/buttonAnimated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/dropdown1"
+                android:layout_marginTop="40dp"
+                android:text="yesterday,10 Aug 2018"
+                android:textAlignment="viewStart"
+                android:paddingStart="30dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewAnimated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAnimated">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10 KM"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reference No."
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="04:40 PM"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView"
+                        app:layout_constraintStart_toStartOf="@+id/textView"
+                        app:layout_constraintTop_toBottomOf="@+id/textView"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="9899778873"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView1"
+                        app:layout_constraintStart_toStartOf="@+id/textView1"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/round_outline"
+                        android:backgroundTint="@color/colordarkAccent"
+                        android:outlineProvider="background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+                    <TextView
+                        android:id="@+id/textView00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10 KM"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imageView" />
+
+                    <TextView
+                        android:id="@+id/textView001"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reference No."
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imageView" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="04:40 PM"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView"
+                        app:layout_constraintStart_toStartOf="@+id/textView00"
+                        app:layout_constraintTop_toBottomOf="@+id/textView00"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/textView003"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="9899778873"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView1"
+                        app:layout_constraintStart_toStartOf="@+id/textView001"
+                        app:layout_constraintTop_toBottomOf="@+id/textView001" />
+
+
+                    <ImageView
+                        android:id="@+id/underline1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/round_outline"
+                        android:backgroundTint="@color/colordarkAccent"
+                        android:outlineProvider="background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView003" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/textView000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10 KM"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/underline1" />
+
+                    <TextView
+                        android:id="@+id/textView0001"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reference No."
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/underline1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="04:40 PM"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView"
+                        app:layout_constraintStart_toStartOf="@+id/textView000"
+                        app:layout_constraintTop_toBottomOf="@+id/textView000"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/textView0003"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="9899778873"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView1"
+                        app:layout_constraintStart_toStartOf="@+id/textView0001"
+                        app:layout_constraintTop_toBottomOf="@+id/textView0001" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Download"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/custombutton"
+                        android:backgroundTint="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView0003"
+                        tools:layout_editor_absoluteX="262dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/buttonAnimated1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/dropdown1"
+                android:layout_marginTop="40dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat"
+                android:text="9,Aug 2018"
+                android:textAlignment="viewStart"
+                android:paddingStart="30dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewAnimated" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewAnimated1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAnimated1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10 KM"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewA1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reference No."
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="04:40 PM"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewA"
+                        app:layout_constraintStart_toStartOf="@+id/textViewA"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewA"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/textViewA3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="9899778873"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewA1"
+                        app:layout_constraintStart_toStartOf="@+id/textViewA1"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewA1" />
+
+
+                    <ImageView
+                        android:id="@+id/imageViewA"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/round_outline"
+                        android:backgroundTint="@color/colordarkAccent"
+                        android:outlineProvider="background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewA3" />
+
+
+                    <TextView
+                        android:id="@+id/textView00B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10 KM"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imageViewA" />
+
+                    <TextView
+                        android:id="@+id/textView001B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reference No."
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imageViewA" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="04:40 PM"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewA"
+                        app:layout_constraintStart_toStartOf="@+id/textView00B"
+                        app:layout_constraintTop_toBottomOf="@+id/textView00B"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/textView003B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="9899778873"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewA1"
+                        app:layout_constraintStart_toStartOf="@+id/textView001B"
+                        app:layout_constraintTop_toBottomOf="@+id/textView001B" />
+
+
+                    <ImageView
+                        android:id="@+id/underline1B"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/round_outline"
+                        android:backgroundTint="@color/colordarkAccent"
+                        android:outlineProvider="background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView003B" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/textView000C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10 KM"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/underline1B" />
+
+                    <TextView
+                        android:id="@+id/textView0001C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reference No."
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/underline1B" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="04:40 PM"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewA"
+                        app:layout_constraintStart_toStartOf="@+id/textView000C"
+                        app:layout_constraintTop_toBottomOf="@+id/textView000C"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/textView0003C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="9899778873"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewA1"
+                        app:layout_constraintStart_toStartOf="@+id/textView0001C"
+                        app:layout_constraintTop_toBottomOf="@+id/textView0001C" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Download"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:textSize="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/custombutton"
+                        android:backgroundTint="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView0003C"
+                        tools:layout_editor_absoluteX="262dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/buttonAnimated2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/dropdown1"
+                android:layout_marginTop="40dp"
+                android:textAllCaps="false"
+                android:text="8,Aug 2018"
+                android:fontFamily="@font/montserrat"
+                android:textAlignment="viewStart"
+                android:paddingStart="30dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewAnimated1" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewAnimated2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:visibility="gone"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAnimated2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10 KM"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView12D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reference No."
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="04:40 PM"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView2D"
+                        app:layout_constraintStart_toStartOf="@+id/textView2D"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2D"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/textView32D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="9899778873"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView12D"
+                        app:layout_constraintStart_toStartOf="@+id/textView12D"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12D" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView2D"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/round_outline"
+                        android:backgroundTint="@color/colordarkAccent"
+                        android:outlineProvider="background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView32D" />
+
+
+                    <TextView
+                        android:id="@+id/textView002D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10 KM"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imageView2D" />
+
+                    <TextView
+                        android:id="@+id/textView0012D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reference No."
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/imageView2D" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="04:40 PM"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView2D"
+                        app:layout_constraintStart_toStartOf="@+id/textView002D"
+                        app:layout_constraintTop_toBottomOf="@+id/textView002D"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/textView0032D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="9899778873"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView12D"
+                        app:layout_constraintStart_toStartOf="@+id/textView0012D"
+                        app:layout_constraintTop_toBottomOf="@+id/textView0012D" />
+
+
+                    <ImageView
+                        android:id="@+id/underline12D"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@drawable/round_outline"
+                        android:backgroundTint="@color/colordarkAccent"
+                        android:outlineProvider="background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView0032D" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/textView0002D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="10 KM"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/underline12D" />
+
+                    <TextView
+                        android:id="@+id/textView00012D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reference No."
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/underline12D" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="04:40 PM"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView2D"
+                        app:layout_constraintStart_toStartOf="@+id/textView0002D"
+                        app:layout_constraintTop_toBottomOf="@+id/textView0002D"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/textView00032D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="9899778873"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/colordarkAccent"
+                        app:layout_constraintEnd_toEndOf="@+id/textView12D"
+                        app:layout_constraintStart_toStartOf="@+id/textView00012D"
+                        app:layout_constraintTop_toBottomOf="@+id/textView00012D" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Download"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:textSize="10dp"
+                        android:paddingStart="4dp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/custombutton"
+                        android:backgroundTint="@color/colorPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView00032D"
+                        tools:layout_editor_absoluteX="262dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginEnd="0dp"
+        android:background="#FFFAFA"
+        app:menu="@menu/navigation"
+        android:elevation="2dp"
+        app:itemIconTint="#000000"
+        android:layout_marginBottom="0dp">
+
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="25dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_round"
+        android:layout_gravity="bottom|center"
+        android:src="@drawable/ic_qr_code__icon"
+        app:tint="#FFFFFF">
+
+    </ImageView>
+
+</FrameLayout>
+</RelativeLayout>

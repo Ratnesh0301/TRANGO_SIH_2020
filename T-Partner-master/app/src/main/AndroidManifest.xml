@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aarti.prtnr">
+
+    <application
+        android:allowBackup="true"
+        android:label="TrangoPartner"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.aarti.prtnr.partnerTripsRecieved"></activity>
+        <activity android:name="com.aarti.prtnr.partnerHome" />
+        <activity android:name="com.aarti.prtnr.TripCompleted" />
+        <activity android:name="com.aarti.prtnr.RouteOptions" />
+        <activity android:name="com.aarti.prtnr.SOS" />
+        <activity android:name="com.aarti.prtnr.sign_up" />
+        <activity android:name="com.aarti.prtnr.Statements" />
+        <activity android:name="com.aarti.prtnr.Profile" />
+        <activity android:name="com.aarti.prtnr.Bus" />
+        <activity android:name="com.aarti.prtnr.Metro" />
+        <activity android:name="com.aarti.prtnr.Trains" />
+        <activity android:name="com.aarti.prtnr.Cabs" />
+        <activity android:name="com.aarti.prtnr.Wallet" />
+        <activity android:name="com.aarti.prtnr.GetRoutes" />
+        <activity android:name="com.aarti.prtnr.Routes" />
+        <activity android:name="com.aarti.prtnr.Login" />
+        <activity android:name="com.aarti.prtnr.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aarti.prtnr.Home" />
+        <activity android:name="com.aarti.prtnr.MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>
